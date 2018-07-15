@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterr.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="FinalProject.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masterr.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="FinalProject.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <div class="single_top">
 	 <div class="container"> 

@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterr.master.cs" Inherits="FinalProject.Masterr" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="FinalProject.Masterr" %>
 
 <!DOCTYPE html>
 
@@ -189,8 +189,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </li>
 
-                            <li class="active grid"><a class="color5" href="404.aspx">Blog</a></li>
-                            <li><a class="color6" href="contact.html">Support</a></li>
+                            <li class="active grid"><a class="color5" href="#">Blog</a></li>
+                            <li><a class="color6" href="contact">Support</a></li>
                         </ul>
                     </div>
                 </div>
@@ -200,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <a href="Cart.aspx">
                                 <h4>
                                     <p>Cart: <span class="simpleCart_total"></span>(<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</p>
-                                    <img src="images/bag.png" alt="" /><div class="clearfix"></div>
+                                    <img src="images/bag.png" alt="" /><span class="clearfix"></span>
                                 </h4>
                             </a>
                         </div>
