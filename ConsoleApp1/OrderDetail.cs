@@ -9,7 +9,6 @@ namespace FinalProjectDAL.Models
     [Table("OrderDetail")]
     public partial class OrderDetail
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         public int OrderID { get; set; }

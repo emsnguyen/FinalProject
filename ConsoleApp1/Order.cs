@@ -16,7 +16,6 @@ namespace FinalProjectDAL.Models
             OrderDetails = new HashSet<OrderDetail>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         public int CustomerID { get; set; }

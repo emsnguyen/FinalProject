@@ -41,7 +41,7 @@ namespace FinalProjectMVC.Controllers
         public ActionResult Create()
         {
             ViewBag.MakerID = new SelectList(db.Makers, "ID", "Name");
-            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "SubCategory1");
+            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "Name");
             return View();
         }
 
@@ -50,7 +50,7 @@ namespace FinalProjectMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,DateImported,Description,TotalSold,TotalLeft,Image,SubCategoryID,MakerID")] Product product)
+        public ActionResult Create([Bind(Include = "ID,Name,DateImported,Description,TotalSold,TotalLeft,Image,SubCategoryID,MakerID,Price")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -60,7 +60,7 @@ namespace FinalProjectMVC.Controllers
             }
 
             ViewBag.MakerID = new SelectList(db.Makers, "ID", "Name", product.MakerID);
-            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "SubCategory1", product.SubCategoryID);
+            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "Name", product.SubCategoryID);
             return View(product);
         }
 
@@ -77,7 +77,7 @@ namespace FinalProjectMVC.Controllers
                 return HttpNotFound();
             }
             ViewBag.MakerID = new SelectList(db.Makers, "ID", "Name", product.MakerID);
-            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "SubCategory1", product.SubCategoryID);
+            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "Name", product.SubCategoryID);
             return View(product);
         }
 
@@ -86,7 +86,7 @@ namespace FinalProjectMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,DateImported,Description,TotalSold,TotalLeft,Image,SubCategoryID,MakerID")] Product product)
+        public ActionResult Edit([Bind(Include = "ID,Name,DateImported,Description,TotalSold,TotalLeft,Image,SubCategoryID,MakerID,Price")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace FinalProjectMVC.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.MakerID = new SelectList(db.Makers, "ID", "Name", product.MakerID);
-            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "SubCategory1", product.SubCategoryID);
+            ViewBag.SubCategoryID = new SelectList(db.SubCategories, "ID", "Name", product.SubCategoryID);
             return View(product);
         }
 

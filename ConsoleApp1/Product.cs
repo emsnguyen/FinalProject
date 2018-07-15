@@ -15,7 +15,6 @@ namespace FinalProjectDAL.Models
             OrderDetails = new HashSet<OrderDetail>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Required]
@@ -25,7 +24,6 @@ namespace FinalProjectDAL.Models
         [Column(TypeName = "date")]
         public DateTime DateImported { get; set; }
 
-        [StringLength(150)]
         public string Description { get; set; }
 
         public int TotalSold { get; set; }
@@ -39,6 +37,8 @@ namespace FinalProjectDAL.Models
         public int SubCategoryID { get; set; }
 
         public int MakerID { get; set; }
+
+        public double? Price { get; set; }
 
         public virtual Maker Maker { get; set; }
 

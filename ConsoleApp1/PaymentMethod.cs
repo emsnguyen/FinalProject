@@ -15,7 +15,6 @@ namespace FinalProjectDAL.Models
             Order_Pay = new HashSet<Order_Pay>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Column("PaymentMethod")]

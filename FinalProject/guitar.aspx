@@ -20,7 +20,7 @@
 		  <div class="grid1_of_4 simpleCart_shelfItem">
 				<div class="content_box"><a href="single.html">
 				  <div class="view view-fifth">
-					 <img src="images/1.jpg" class="img-responsive" alt=""/>
+					 <img src="https://guitar.station.vn/wp-content/uploads/2018/06/Fender-FA-100-Dreadnought-Acoustic-Guitar-with-Gig-Bag-Natural-0-360x360.jpg" class="img-responsive" alt=""/>
 						<div class="mask1">
 							<div class="info"> </div>
 						</div>
@@ -50,7 +50,7 @@
 			<div class="grid1_of_4 simpleCart_shelfItem">
 				<div class="content_box"><a href="single.html">
 				  <div class="view view-fifth">
-					 <img src="images/2.jpg" class="img-responsive" alt=""/>
+					 <img src="https://guitar.station.vn/wp-content/uploads/2018/06/Fender-FA-100-Dreadnought-Acoustic-Guitar-with-Gig-Bag-Natural-0-360x360.jpg" class="img-responsive" alt=""/>
 						<div class="mask1">
 							<div class="info"> </div>
 						</div>
@@ -80,7 +80,7 @@
 			<div class="grid1_of_4 simpleCart_shelfItem">
 				<div class="content_box"><a href="single.html">
 				  <div class="view view-fifth">
-					 <img src="images/3.jpg" class="img-responsive" alt=""/>
+					 <img src="https://guitar.station.vn/wp-content/uploads/2018/06/Fender-FA-100-Dreadnought-Acoustic-Guitar-with-Gig-Bag-Natural-0-360x360.jpg" class="img-responsive" alt=""/>
 						<div class="mask1">
 							<div class="info"> </div>
 						</div>
@@ -110,7 +110,7 @@
 			<div class="grid1_of_4 simpleCart_shelfItem">
 				<div class="content_box"><a href="single.html">
 				  <div class="view view-fifth">
-					 <img src="images/4.jpg" class="img-responsive" alt=""/>
+					 <img src="https://guitar.station.vn/wp-content/uploads/2018/06/Fender-FA-100-Dreadnought-Acoustic-Guitar-with-Gig-Bag-Natural-0-360x360.jpg" class="img-responsive" alt=""/>
 						<div class="mask1">
 							<div class="info"> </div>
 						</div>

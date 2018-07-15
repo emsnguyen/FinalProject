@@ -4,8 +4,8 @@
 	 <div class="container"> 
 	  <div class="error-404 text-center">
 			<h1>404</h1>
-			<p>You ' ve Failed</p>
-			<a class="b-home" href="index.html">Back to Home</a>
+			<p>Not found!</p>
+			<a class="b-home" href="home">Back to Home</a>
 		  </div>
       </div>
 </div>      

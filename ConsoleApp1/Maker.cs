@@ -6,26 +6,28 @@ namespace FinalProjectDAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("SubCategory")]
-    public partial class SubCategory
+    [Table("Maker")]
+    public partial class Maker
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public SubCategory()
+        public Maker()
         {
             Products = new HashSet<Product>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
-        public int CategoryID { get; set; }
-
-        [Column("SubCategory")]
         [Required]
         [StringLength(50)]
-        public string SubCategory1 { get; set; }
+        public string Name { get; set; }
 
-        public virtual Category Category { get; set; }
+        [Required]
+        [StringLength(150)]
+        public string Description { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Website { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Products { get; set; }

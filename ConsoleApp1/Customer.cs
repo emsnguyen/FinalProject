@@ -6,16 +6,15 @@ namespace FinalProjectDAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Maker")]
-    public partial class Maker
+    [Table("Customer")]
+    public partial class Customer
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Maker()
+        public Customer()
         {
-            Products = new HashSet<Product>();
+            Orders = new HashSet<Order>();
         }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         [Required]
@@ -23,14 +22,18 @@ namespace FinalProjectDAL.Models
         public string Name { get; set; }
 
         [Required]
-        [StringLength(150)]
-        public string Description { get; set; }
+        [StringLength(50)]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Website { get; set; }
+        public string Address { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string Phone { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

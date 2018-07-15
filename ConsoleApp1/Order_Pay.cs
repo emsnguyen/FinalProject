@@ -8,7 +8,6 @@ namespace FinalProjectDAL.Models
 
     public partial class Order_Pay
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         public int OrderID { get; set; }
